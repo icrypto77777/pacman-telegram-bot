@@ -149,7 +149,7 @@ async def button_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 def main():
     # Замените "YOUR_BOT_TOKEN" на токен вашего бота
     import os
-application = Application.builder().token(os.getenv(7858082895:AAFCHht4jHj-w6VZDZq7UlUcvG0NKUleu-I)).build()
+application = Application.builder().token(os.getenv('7858082895:AAFCHht4jHj-w6VZDZq7UlUcvG0NKUleu-I')).build()
 
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CallbackQueryHandler(button_callback))
